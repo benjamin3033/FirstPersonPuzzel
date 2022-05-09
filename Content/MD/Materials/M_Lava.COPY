@@ -1,0 +1,201 @@
+Begin Object Class=/Script/Engine.Material Name="M_Lava"
+   Begin Object Class=/Script/Engine.MaterialExpressionAppendVector Name="MaterialExpressionAppendVector_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant3Vector Name="MaterialExpressionConstant3Vector_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNoise Name="MaterialExpressionNoise_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionOneMinus Name="MaterialExpressionOneMinus_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionPanner Name="MaterialExpressionPanner_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionReroute Name="MaterialExpressionReroute_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureCoordinate Name="MaterialExpressionTextureCoordinate_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_4"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTime Name="MaterialExpressionTime_0"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionAppendVector_0"
+      A=(Expression=MaterialExpressionPanner'"M_Lava:MaterialExpressionPanner_0"')
+      B=(Expression=MaterialExpressionMultiply'"M_Lava:MaterialExpressionMultiply_1"')
+      MaterialExpressionEditorX=-768
+      MaterialExpressionEditorY=144
+      MaterialExpressionGuid=D08C824B462F7DDC2309B8B521ABA942
+      Material=Material'"M_Lava"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant3Vector_0"
+      Constant=(R=1.000000,G=0.173289,B=0.000000,A=0.000000)
+      MaterialExpressionEditorX=-480
+      MaterialExpressionEditorY=752
+      MaterialExpressionGuid=B50185F140C832E85D346F8F6E7D11CD
+      Material=Material'"M_Lava"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_0"
+      A=(Expression=MaterialExpressionNoise'"M_Lava:MaterialExpressionNoise_0"')
+      B=(Expression=MaterialExpressionConstant3Vector'"M_Lava:MaterialExpressionConstant3Vector_0"')
+      MaterialExpressionEditorX=-176
+      MaterialExpressionEditorY=256
+      MaterialExpressionGuid=1DBB494D4CB02B78813AE2919B09A7CB
+      Material=Material'"M_Lava"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_1"
+      A=(Expression=MaterialExpressionTime'"M_Lava:MaterialExpressionTime_0"')
+      ConstB=0.200000
+      MaterialExpressionEditorX=-896
+      MaterialExpressionEditorY=336
+      MaterialExpressionGuid=2E871617415D6013193E3E8B6343DAAC
+      Material=Material'"M_Lava"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_2"
+      A=(Expression=MaterialExpressionMultiply'"M_Lava:MaterialExpressionMultiply_0"')
+      B=(Expression=MaterialExpressionOneMinus'"M_Lava:MaterialExpressionOneMinus_0"')
+      MaterialExpressionEditorX=-96
+      MaterialExpressionEditorY=576
+      MaterialExpressionGuid=72EE82CF464F7FD2928C73A7AE9D94C9
+      Material=Material'"M_Lava"'
+   End Object
+   Begin Object Name="MaterialExpressionNoise_0"
+      Position=(Expression=MaterialExpressionAppendVector'"M_Lava:MaterialExpressionAppendVector_0"')
+      NoiseFunction=NOISEFUNCTION_GradientTex3D
+      bTurbulence=False
+      OutputMin=0.000000
+      MaterialExpressionEditorX=-704
+      MaterialExpressionEditorY=448
+      MaterialExpressionGuid=4B211C2F4D597AFDBFC881BB95D70034
+      Material=Material'"M_Lava"'
+      bCollapsed=False
+   End Object
+   Begin Object Name="MaterialExpressionOneMinus_0"
+      Input=(Expression=MaterialExpressionTextureSample'"M_Lava:MaterialExpressionTextureSample_4"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      MaterialExpressionEditorX=-240
+      MaterialExpressionEditorY=624
+      MaterialExpressionGuid=118C18CA4896C730C1272ABC74FEEA09
+      Material=Material'"M_Lava"'
+   End Object
+   Begin Object Name="MaterialExpressionPanner_0"
+      Coordinate=(Expression=MaterialExpressionTextureCoordinate'"M_Lava:MaterialExpressionTextureCoordinate_1"')
+      SpeedY=0.100000
+      MaterialExpressionEditorX=-880
+      MaterialExpressionEditorY=-176
+      MaterialExpressionGuid=CCE672954CDA8A83A1C5DA94A6AB591F
+      Material=Material'"M_Lava"'
+   End Object
+   Begin Object Name="MaterialExpressionReroute_2"
+      Input=(Expression=MaterialExpressionPanner'"M_Lava:MaterialExpressionPanner_0"')
+      MaterialExpressionEditorX=-651
+      MaterialExpressionEditorY=-265
+      MaterialExpressionGuid=E07D48514857AAABDFF83E9B70476518
+      Material=Material'"M_Lava"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureCoordinate_1"
+      MaterialExpressionEditorX=-1072
+      MaterialExpressionEditorY=-160
+      MaterialExpressionGuid=05D74EF54C96006338E6E6A880C80C2D
+      Material=Material'"M_Lava"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_0"
+      Coordinates=(Expression=MaterialExpressionReroute'"M_Lava:MaterialExpressionReroute_2"')
+      Texture=Texture2D'"/Game/Mats/stacked-rock-cliff_albedo.stacked-rock-cliff_albedo"'
+      MaterialExpressionEditorX=-464
+      MaterialExpressionEditorY=-672
+      MaterialExpressionGuid=3199BFB94DE0EC63E0966AB164A88C30
+      Material=Material'"M_Lava"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_1"
+      Coordinates=(Expression=MaterialExpressionReroute'"M_Lava:MaterialExpressionReroute_2"')
+      Texture=Texture2D'"/Game/Mats/stacked-rock-cliff_metallic.stacked-rock-cliff_metallic"'
+      MaterialExpressionEditorX=-464
+      MaterialExpressionEditorY=-432
+      MaterialExpressionGuid=CD3A0A9F405E3BEFEA895A8DD22DCC42
+      Material=Material'"M_Lava"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_2"
+      Coordinates=(Expression=MaterialExpressionReroute'"M_Lava:MaterialExpressionReroute_2"')
+      Texture=Texture2D'"/Game/Mats/stacked-rock-cliff_normal-dx.stacked-rock-cliff_normal-dx"'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=-448
+      MaterialExpressionEditorY=32
+      MaterialExpressionGuid=7C116FC64B0DBB9E9DEDD79A4A1E6349
+      Material=Material'"M_Lava"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_3"
+      Coordinates=(Expression=MaterialExpressionReroute'"M_Lava:MaterialExpressionReroute_2"')
+      Texture=Texture2D'"/Game/Mats/stacked-rock-cliff_roughness.stacked-rock-cliff_roughness"'
+      MaterialExpressionEditorX=-448
+      MaterialExpressionEditorY=-208
+      MaterialExpressionGuid=44EB6F94496870317096AF9F3E45D3E9
+      Material=Material'"M_Lava"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_4"
+      Coordinates=(Expression=MaterialExpressionPanner'"M_Lava:MaterialExpressionPanner_0"')
+      Texture=Texture2D'"/Game/Mats/stacked-rock-cliff_height.stacked-rock-cliff_height"'
+      MaterialExpressionEditorX=-496
+      MaterialExpressionEditorY=272
+      MaterialExpressionGuid=F59BED42410C94B39EAECD8A2B32592E
+      Material=Material'"M_Lava"'
+   End Object
+   Begin Object Name="MaterialExpressionTime_0"
+      MaterialExpressionEditorX=-1056
+      MaterialExpressionEditorY=208
+      MaterialExpressionGuid=12484F3B400A3812016BFCB2F617916C
+      Material=Material'"M_Lava"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Metallic=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_1"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Roughness=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_3"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Normal=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_2"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   EmissiveColor=(Expression=MaterialExpressionMultiply'"MaterialExpressionMultiply_2"')
+   bUsedWithStaticLighting=True
+   Expressions(0)=MaterialExpressionNoise'"MaterialExpressionNoise_0"'
+   Expressions(1)=MaterialExpressionMultiply'"MaterialExpressionMultiply_0"'
+   Expressions(2)=MaterialExpressionConstant3Vector'"MaterialExpressionConstant3Vector_0"'
+   Expressions(3)=MaterialExpressionTime'"MaterialExpressionTime_0"'
+   Expressions(4)=MaterialExpressionAppendVector'"MaterialExpressionAppendVector_0"'
+   Expressions(5)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_0"'
+   Expressions(6)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_1"'
+   Expressions(7)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_2"'
+   Expressions(8)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_3"'
+   Expressions(9)=MaterialExpressionMultiply'"MaterialExpressionMultiply_1"'
+   Expressions(10)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_4"'
+   Expressions(11)=MaterialExpressionMultiply'"MaterialExpressionMultiply_2"'
+   Expressions(12)=MaterialExpressionOneMinus'"MaterialExpressionOneMinus_0"'
+   Expressions(13)=MaterialExpressionPanner'"MaterialExpressionPanner_0"'
+   Expressions(14)=MaterialExpressionTextureCoordinate'"MaterialExpressionTextureCoordinate_1"'
+   Expressions(15)=MaterialExpressionReroute'"MaterialExpressionReroute_2"'
+   bCanMaskedBeAssumedOpaque=True
+   StateId=E1E7C86C4194F208AD2E7092834B19C8
+   CachedExpressionData=(ReferencedTextures=(Texture2D'"/Game/Mats/stacked-rock-cliff_albedo.stacked-rock-cliff_albedo"',Texture2D'"/Game/Mats/stacked-rock-cliff_metallic.stacked-rock-cliff_metallic"',Texture2D'"/Game/Mats/stacked-rock-cliff_normal-dx.stacked-rock-cliff_normal-dx"',Texture2D'"/Game/Mats/stacked-rock-cliff_roughness.stacked-rock-cliff_roughness"',Texture2D'"/Game/Mats/stacked-rock-cliff_height.stacked-rock-cliff_height"'),QualityLevelsUsed=(False,False,False,False))
+   ReferencedTextureGuids(0)=0CFD92D94F45D64E5D3BC89897F5285B
+   ReferencedTextureGuids(1)=42E71B164D2C2D729CA25CB6EFDC7131
+   ReferencedTextureGuids(2)=8B2740764392F707563DFEAEA6D6E0AB
+   ReferencedTextureGuids(3)=B14F006F4BAD0E7359DA32A7BDCE7370
+   ReferencedTextureGuids(4)=6A90897648B1B2A58A70A69193AE74E0
+   TextureStreamingDataVersion=1
+   TextureStreamingData(0)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="stacked-rock-cliff_albedo",TextureReference=/Game/Mats/stacked-rock-cliff_albedo.stacked-rock-cliff_albedo)
+   TextureStreamingData(1)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="stacked-rock-cliff_height",TextureReference=/Game/Mats/stacked-rock-cliff_height.stacked-rock-cliff_height)
+   TextureStreamingData(2)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="stacked-rock-cliff_metallic",TextureReference=/Game/Mats/stacked-rock-cliff_metallic.stacked-rock-cliff_metallic)
+   TextureStreamingData(3)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="stacked-rock-cliff_normal-dx",TextureReference=/Game/Mats/stacked-rock-cliff_normal-dx.stacked-rock-cliff_normal-dx)
+   TextureStreamingData(4)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="stacked-rock-cliff_roughness",TextureReference=/Game/Mats/stacked-rock-cliff_roughness.stacked-rock-cliff_roughness)
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=39BDC016466A2D827C200BA9FF20D94C
+End Object
